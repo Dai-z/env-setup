@@ -41,7 +41,7 @@ link_dotfiles() {
   pushd ${BASE_DIR}
   for path in .*; do
     case ${path} in
-    . | .. )
+    . | .. | .git)
       continue
       ;;
     *)
@@ -118,17 +118,6 @@ setup_nvim() {
 }
 
 confirm init_repo "Initialize dotfiles repo"
-confirm link_common_dotfiles "Link common dotiles"
-
-case $OS_TYPE in
-  Linux*)
-    confirm link_linux_dotfiles "Link dotiles for Linux"
-    ;;
-  Darwin*)
-    confirm link_macos_dotfiles "Link dotiles for macOS"
-    ;;
-  *)
-    echo "OS $OS_TYPE is not supported"
-esac
+confirm link_dotfiles "Link common dotiles"
 
 confirm setup_nvim "Setup nvim"
