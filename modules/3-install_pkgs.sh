@@ -23,12 +23,20 @@ install_utils() {
 
 install_libs() {
   sudo apt-get install -yq \
-    python3-dev python3-pip python-dev python-pip libudev-dev libx264-dev
+    python3-dev python3-pip libudev-dev libx264-dev
+}
+
+install_more_apps() {
+  # Typora
+  wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+  sudo add-apt-repository 'deb https://typora.io/linux ./'
+  sudo apt-get update
+  # Insatll
+  sudo apt-get install -yq \
+    typora kazam
 }
 
 install_python_pkgs() {
-  sudo -H -E python -m pip install -U pip
-  sudo -H -E python -m pip install -r modules/requirements.txt
   sudo -H -E python3 -m pip install -U pip
   sudo -H -E python3 -m pip install -r modules/requirements.txt
 }
