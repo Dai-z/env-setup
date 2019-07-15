@@ -98,6 +98,7 @@ Linux*)
   confirm install_libs "Install necessary libraries"
   confirm install_python_pkgs "Install Python packages"
   confirm install_oh_my_zsh "Install Oh-My-Zsh"
+  confirm install_more_apps "Install more applications"
   ;;
 Darwin*)
   confirm install_homebrew_pkgs "Install packages from HomeBrew"
