@@ -5,14 +5,19 @@ some config in ubuntu
 
 ## TODO
 
+- [ ] Install vscode
+- [ ] Install enpass
+- [ ] Install gitkraken
+- [ ] Install chrome
+- [ ] Install flameshot
+
+
+
 - [ ] Install Gogh for terminal theme(Oceanic Next)
-- [ ] Ubuntu 
+- [ ] Ubuntu
   - [ ] theme: Adapta-Nokto
   - [ ] Icon: Papirus-Dark
-- [ ] Install vscode 
-- [ ] Install gitkraken
 - [ ] Install Typora
-- [ ] Install chrome
 - [ ] Install kazam
 - [ ] Install neovim
 - [ ] install hydra paper
